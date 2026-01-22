@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Venda de PDF</title>
+    <meta name="description" content="Página de venda de PDF com aba de resultados e pagamento via Pix Copia e Cola." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container topbar__inner">
+            <div class="brand" aria-label="Marca">
+                <span class="brand__mark" aria-hidden="true"></span>
+                <span class="brand__name">PDF VOU FICAR RICO</span>
+            </div>
+
+            <!-- Abas -->
+            <nav class="tabs" aria-label="Navegação">
+                <button class="tab is-active" type="button" data-tab="venda">Venda</button>
+                <button class="tab" type="button" data-tab="resultados">Resultados</button>
+            </nav>
+
+            <button class="topbar__cta" type="button" id="openPixTop">Comprar</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- =========================
+         ABA: VENDA
+    ========================== -->
+        <section class="tab-panel is-active" id="tab-venda" data-panel="venda">
+            <section class="hero">
+                <div class="container hero__grid">
+                    <div class="hero__content">
+                        <p class="pill">Material digital em PDF</p>
+                        <h1 class="hero__title">Pare de apostar no escuro. Aprenda a ler a roleta com estratégia. Guia prático em PDF com análises, padrões e gestão.</h1>
+                        <p class="hero__subtitle">
+                            Material digital em PDF focado em análise, leitura de padrões e organização de jogo, ideal para quem quer mais consciência antes de apostar.
+                        </p>
+
+                        <div class="hero__actions">
+                            <button class="btn btn--primary" type="button" id="openPixHero">Quero acessar o guia agora</button>
+                            <a class="btn btn--ghost" href="#conteudo">Ver o que vou aprender</a>
+                        </div>
+
+                        <div class="hero__trust">
+                            <div class="trust__item">
+                                <span class="trust__label">Entrega</span>
+                                <span class="trust__value">Imediata</span>
+                            </div>
+                            <div class="trust__item">
+                                <span class="trust__label">Formato</span>
+                                <span class="trust__value">PDF</span>
+                            </div>
+                            <div class="trust__item">
+                                <span class="trust__label">Acesso</span>
+                                <span class="trust__value">Vitalício</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__card" aria-label="Destaque do produto">
+                        <div class="product-card">
+                            <div class="product-card__top">
+                                <span class="product-card__tag">Destaque</span>
+                                <span class="product-card__price">R$ 29,90</span>
+                            </div>
+
+                            <div class="product-card__body">
+                                <h2 class="product-card__title">Guia completo de análise da roleta
+                                </h2>
+                                <p class="product-card__desc">
+                                    Estrutura clara, leitura simples e aplicação prática.
+                                </p>
+
+                                <ul class="checklist" id="conteudo">
+                                    <li>✔️ Método passo a passo de análise</li>
+                                    <li>✔️ Leitura de números e padrões
+                                    </li>
+                                    <li>✔️ Regras de gerenciamento e controle
+                                    </li>
+                                    <li>✔️ Exemplos reais de aplicação
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="product-card__bottom" id="comprar">
+                                <button class="btn btn--primary btn--full" id="openPixModal" type="button">
+                  Pagar com Pix
+                </button>
+                                <p class="product-card__note">
+                                    Ao clicar, você verá o Pix Copia e Cola e poderá copiar com um clique.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__bg" aria-hidden="true"></div>
+            </section>
+
+            <section class="features">
+                <div class="container">
+                    <div class="section-head">
+                        <h2>Por que este material é direto ao ponto</h2>
+                        <p>Uma estrutura que ajuda você a aplicar com consistência e clareza.</p>
+                    </div>
+
+                    <div class="features__grid">
+                        <article class="feature">
+                            <h3>Organização</h3>
+                            <p>Conteúdo dividido por tópicos, fácil de consultar durante o jogo.</p>
+                        </article>
+                        <article class="feature">
+                            <h3>Aplicação prática</h3>
+                            <p>Métodos pensados para leitura real de mesa, sem achismo.</p>
+                        </article>
+                        <article class="feature">
+                            <h3>Experiência profissional</h3>
+                            <p>Layout limpo, PDF leve, leitura fácil no celular ou PC.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq">
+                <div class="container">
+                    <div class="section-head">
+                        <h2>Dúvidas comuns</h2>
+                        <p>Respostas objetivas para facilitar sua decisão.</p>
+                    </div>
+
+                    <div class="faq__grid">
+                        <details class="faq__item">
+                            <summary>Como recebo o PDF?</summary>
+                            <p>Após a confirmação do pagamento, você recebe o acesso imediatamente (ou link automático de download).</p>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary>Posso acessar no celular?</summary>
+                            <p>Sim. O PDF funciona perfeitamente em celular, tablet e computador.</p>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary>É confialvel ?</summary>
+                            <p>Sim é Confiavel, apos o pagamento, voce pode falar diretamente comigo no whatsapp</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- =========================
+         ABA: RESULTADOS
+    ========================== -->
+        <section class="tab-panel" id="tab-resultados" data-panel="resultados">
+            <section class="results">
+                <div class="container">
+                    <div class="section-head">
+                        <h2>Resultados</h2>
+                        <p>Resultados surpreendentes. Faça voce mesmo !! nao deixe a oportunidade passar...</p>
+                    </div>
+
+                    <!-- Grade de mídias -->
+                    <div class="media-grid">
+                        <!-- Card 1 (imagem) -->
+                        <figure class="media-card">
+                            <div class="media-card__thumb">
+                                <img src="/assets/img/ganhos2.jpeg" alt="Resultado 01" loading="lazy">
+                            </div>
+                            <figcaption class="media-card__caption">
+                                <span class="media-card__title">Resultado 01</span>
+                                <span class="media-card__meta">Print de ganho</span>
+                            </figcaption>
+                        </figure>
+
+                        <!-- Card 2 (imagem) -->
+                        <figure class="media-card">
+                            <div class="media-card__thumb">
+                                <img src="/assets/img/comprovante.jpeg" alt="Resultado 02" loading="lazy">
+                            </div>
+                            <figcaption class="media-card__caption">
+                                <span class="media-card__title">Resultado 02</span>
+                                <span class="media-card__meta">Comprovação</span>
+                            </figcaption>
+                        </figure>
+
+                        <!-- Card 3 (vídeo placeholder: use seu link depois) -->
+                        <figure class="media-card">
+                            <div class="media-card__thumb">
+                                <video class="media-video" controls preload="none" playsinline>
+      <source src="/assets/video/video4.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo.
+    </video>
+                            </div>
+                            <figcaption class="media-card__caption">
+                                <span class="media-card__title">Vídeo 01</span>
+                                <span class="media-card__meta">Comprovação</span>
+                            </figcaption>
+                        </figure>
+
+                        <!-- Card 4 (imagem) -->
+                        <figure class="media-card">
+                            <div class="media-card__thumb">
+                                <img src="/assets/img/ganho4.jpeg" alt="Resultado 03" loading="lazy">
+                            </div>
+                            <figcaption class="media-card__caption">
+                                <span class="media-card__title">Resultado 03</span>
+                                <span class="media-card__meta">Print</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="results__cta">
+                        <div class="results__ctaBox">
+                            <h3>Quer acessar o material?</h3>
+                            <p>Volte para a aba de venda e finalize no Pix Copia e Cola.</p>
+                            <button class="btn btn--primary" type="button" id="goVenda">Ir para Venda</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer__inner">
+                <div class="brand brand--footer">
+                    <span class="brand__mark" aria-hidden="true"></span>
+                    <span class="brand__name">PDF VOU FICAR RICO</span>
+                </div>
+                <p class="footer__copy">Todos os direitos reservados © <span id="year"></span></p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Modal Pix -->
+    <div class="modal" id="pixModal" aria-hidden="true">
+        <div class="modal__backdrop" data-close="true"></div>
+
+        <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="pixTitle">
+            <div class="modal__header">
+                <h3 id="pixTitle">Pix Copia e Cola</h3>
+                <button class="icon-btn" id="closePixModal" aria-label="Fechar modal" type="button">
+          <span aria-hidden="true">×</span>
+        </button>
+            </div>
+
+            <div class="modal__content">
+                <p class="modal__text">
+                    Copie o código abaixo e cole no seu banco para finalizar o pagamento.
+                </p>
+
+                <div class="pixbox">
+                    <div class="pixbox__label">Código Pix</div>
+                    <div class="pixbox__row">
+                        <textarea id="pixCode" class="pixbox__code" readonly rows="4" spellcheck="false">00020126850014br.gov.bcb.pix2563pix.onlyup.com.br/qr/v3/at/7c82f925-05c1-40a3-901b-4f202d835ba85204000053039865802BR5913HP_RECEBIVEIS6009SAO_PAULO62070503***6304EFF1</textarea>
+
+                        <button class="btn btn--secondary" id="copyPix" type="button">
+              Copiar
+            </button>
+                    </div>
+                    <div class="pixbox__hint" id="copyHint" aria-live="polite"></div>
+                </div>
+
+                <div class="modal__footer">
+                    <button class="btn btn--ghost" id="closePixModal2" type="button">Fechar</button>
+                    <button class="btn btn--primary" type="button" id="doneBtn">Entendi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
